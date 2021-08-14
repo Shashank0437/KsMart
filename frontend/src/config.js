@@ -1,2 +1,2 @@
 
-export const apiUrl='http://localhost:3000';
+export const apiUrl=document.location.href.startsWith('http://localhost')?'http://localhost:3000':'';
