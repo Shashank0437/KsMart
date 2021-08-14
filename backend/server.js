@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import mongoose from 'mongoose';
+const mongoose=require('mongoose');
 import config from './config.js';
 import router from './routers/userRouter.js';
 import orderRouter from './routers/orderRouter.js';
@@ -8,11 +8,11 @@ import productRouter from './routers/productRouter.js';
 import uploadRouter from './routers/uploadRouter.js';
 import path from 'path';
 
-
 mongoose.connect(config.MONGODB_URL,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
-    useCreateIndex:true
+    useCreateIndex:true,
+    useFindAndModify:false
 }).then(()=>{
     console.log(`connection to mongodb successful..`);
 }).catch((e)=>{
