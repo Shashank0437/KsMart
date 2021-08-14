@@ -8,6 +8,7 @@ import productRouter from './routers/productRouter.js';
 import uploadRouter from './routers/uploadRouter.js';
 import path from 'path';
 
+
 mongoose.connect(config.MONGODB_URL,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
