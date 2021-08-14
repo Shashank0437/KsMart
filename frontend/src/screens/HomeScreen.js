@@ -142,6 +142,7 @@ export const HomeScreen = {
         <a href="">Shop Now </a>
       </div>
     </div>
+    <br>
   </div>`
     };
     

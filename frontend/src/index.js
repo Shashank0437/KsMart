@@ -56,52 +56,46 @@ const router = async () => {
 
   } else {
     $(".grid-container")[0].style.height = "";
-    footer.innerHTML = `  <footer id="footer" class="section footer">
-        <div class=" container">
-          <div class="footer-container">
-            <div class="footer-center">
-              <h3>EXTRAS</h3>
-              <a href="#">Brands</a>
-              <a href="#">Gift Certificates</a>
-            </div>
-            <div class="footer-center">
-              <h3>INFORMATION</h3>
-              <a href="#">About Us</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms & Conditions</a>
-              <a href="#">Contact Us</a>
-            </div>
-            <div class="footer-center">
-              <h3>MY ACCOUNT</h3>
-              <a href="#">My Account</a>
-              <a href="#">Returns</a>
-            </div>
-            <div class="footer-center">
-              <h3>CONTACT US</h3>
-              <div>
-                <span>
-                  <i class="fas fa-map-marker-alt"></i>
-                </span>
-                42 Dream House, Dreammy street, 7131 Dreamville, USA
-              </div>
-              <div>
-                <span>
-                  <i class="far fa-envelope"></i>
-                </span>
-                company@gmail.com
-              </div>
-              <div>
-                <span>
-                  <i class="fas fa-phone"></i>
-                </span>
-                456-456-4512
-              </div>
-              <div class="payment-methods">
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>`;
+    footer.innerHTML = `   <footer class="footer">
+    <div class="l-footer">
+    <h1>
+      <img src="images/logo.png" style="height: 4.6rem;"></h1>
+    <p>KsMart is known for its disruption of well-established industries through technological innovation and mass scale.As measured by revenue and market capitalization it isone of the world's most valuable companies. As of 2020, KsMart has the highest global brand valuation.</p>
+    </div>
+    <ul class="r-footer">
+    <li>
+      <h2>
+    Social</h2>
+    <ul class="box">
+    <li><a class="linkn" href="#">Facebook</a></li>
+    <li><a class="linkn" href="#">Twitter</a></li>
+    <li><a class="linkn"  href="#">Pinterest</a></li>
+    <li><a class="linkn"  href="#">Dribbble</a></li>
+    </ul>
+    </li>
+    <li class="features">
+      <h2>
+    Information</h2>
+    <ul class="box h-box">
+    <li><a class="linkn"  href="#">Blog</a></li>
+    <li><a  class="linkn" href="#">Pricing</a></li>
+    <li><a  class="linkn" href="#">Sales</a></li>
+    <li><a  class="linkn" href="#">Tickets</a></li>
+    <li><a  class="linkn" href="#">Certifications</a></li>
+    <li><a  class="linkn" href="#">Customer Service</a></li>
+    </ul>
+    </li>
+    <li>
+      <h2>
+    Legal</h2>
+    <ul class="box">
+    <li><a  class="linkn" href="#">Privacy Policy</a></li>
+    <li><a class="linkn"  href="#">Terms of Use</a></li>
+    <li><a  class="linkn" href="#">Contract</a></li>
+    </ul>
+    </li>
+    </ul>
+    </footer>`;
   }
 
   await Header.after_render();

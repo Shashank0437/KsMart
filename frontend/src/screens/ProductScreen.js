@@ -10,7 +10,7 @@ const ProductScreen = {
     if(status.innerText=="In Stock"){
     document.getElementById('add-button').addEventListener('click', () => {
       CartScreen.render(request.id);
-      deletealert("Product added to cart");
+      deletealert("Product added to ");
     });
     }
    },
@@ -85,14 +85,14 @@ const ProductScreen = {
 function deletealert(displayMessage, index) {
   let del_message = document.getElementById('alertbar');
   del_message.innerHTML = `<div class="alert alert-warning alert-dismissible fade show" role="alert" style="z-index:20;position: relative;width:100%">
-                  <strong>Messge:</strong> ${displayMessage}
+                  <strong>Messge:</strong> ${displayMessage}<a href="/#/cart">Cart</a>
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="align-content: center;">
                   <span aria-hidden="true">×</span>
                   </button>
               </div>`;
   setTimeout(function () {
       del_message.innerHTML = ``;
-  }, 4000);
+  }, 5000);
 }
 
 export default ProductScreen;

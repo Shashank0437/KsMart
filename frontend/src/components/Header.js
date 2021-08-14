@@ -6,7 +6,7 @@ const Header={
   
      return `
        <div class="brand">
-        <a href="/#/"> <img src="images/logo.png" style="height: 4.6rem;"> KsMart</a>
+        <a href="/#/"> <img src="images/logo.png" style="height: 4.6rem;"> <span>KsMart</span></a>
       </div>
       <div>
       ${name ? `<a href ="/#/profile"> ${name} </a>`:`<a href="/#/signin">Sign-In</a>`}

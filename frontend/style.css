@@ -42,6 +42,7 @@ header a {
     color: #ffffff;
     text-decoration: none;
     padding: 1rem;
+    font-size: 1.8rem;
 }
 
 header a:hover {
@@ -443,6 +444,7 @@ button.primary{
   transition: all 300ms ease-in-out;
 }
 
+
 .advert-layout .item:hover::after {
   background-color: rgba(223, 74, 74, 0.4);
 }
@@ -488,79 +490,6 @@ button.primary{
 
   .advert-layout .content a {
     transition: all 300ms ease-in-out;
-  }
-}
-
-/* FOOTER */
-
-.footer {
-  background-color: black;
-  padding: 2rem 1rem;
-  line-height: 3rem;
-  height: 20rem;
-}
-
-.footer-center span {
-  margin-right: 1rem;
-}
-
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  color: var(--white);
-}
-
-.footer-center a:link,
-.footer-center a:visited {
-  display: block;
-  color: #f1f1f1;
-  font-size: 1.4rem;
-  transition: 0.6s;
-}
-
-.footer-center a:hover {
-  color: var(--primary);
-}
-
-.footer-center div {
-  color: #f1f1f1;
-  font-size: 1.4rem;
-}
-
-.footer-center h3 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  margin-bottom: 0rem;
-}
-
-.footer .payment-methods {
-  margin-top: 2rem;
-}
-
-@media only screen and (max-width: 998px) {
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 2rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-  }
-  
-}
-
-@media only screen and (max-width: 998px) {
-  #footer{
-    height: 35rem
-  }
-}
-
-@media only screen and (max-width: 765px) {
-  #footer{
-    height: 52rem;
   }
 }
 
@@ -695,20 +624,29 @@ button.primary{
     color:rgb(255, 255, 255);
   }
 
-#address,#city,#postalCode,#country,#price,#image,#brand,#countInStock,#category,#description,#newname{
+#price,#image,#brand,#countInStock,#category,#description,#newname{
     width: 50rem;
     height: 2.7rem;
     font-size:1.5rem;
     background-color: #303532;
     color:rgb(255, 255, 255);
   }
+
+  #address,#city,#postalCode,#country{
+    width: 35rem;
+    height: 2.7rem;
+    font-size:1.5rem;
+    background-color: #303532;
+    color:rgb(255, 255, 255);
+  }
+  
+
+  
  #submitids{
     width: 50rem;
     height: 3.7rem;
     font-size:2rem
   }
-
-
 
   label {
     color:black
@@ -873,6 +811,7 @@ button.primary{
   flex: 1 1 20rem;
 }
 .profile-orders{
+  overflow-x:auto;
   flex:3 1 60rem;
   margin-left:1rem;
   margin-right:1rem
@@ -1050,4 +989,129 @@ background-color: #e6d6d4;
 .ct-label{
   font-size: 1.5rem;
   color: rgb(70, 67, 67);
+}
+
+@media only screen and (max-width: 450px) {
+  .promotion {
+    padding-top: 2rem;
+  }
+  .grid-container{
+    height:6rem;
+  }
+  #carouselExampleIndicators{
+    padding: 0;
+  }
+  .title{
+    margin-bottom: 1rem;
+  }
+  .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-center{
+    width:10rem
+  }
+  header a{
+    font-size: 1.4rem;
+  }
+  a span{
+    font-size: 1.6rem;
+  }
+
+}
+
+/*footer*/
+*, *:before, *:after {
+  box-sizing: border-box;
+  }
+  
+  .footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 3rem;
+  border:rgb(65, 60, 66) 10px solid;
+  border-bottom:rgb(65, 60, 66) 38px solid ;
+  color: #fff;
+  background-color: rgb(32, 31, 31);
+  }
+  
+  .footer > * {
+  flex:  1 100%;
+  }
+  
+  .l-footer {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+  background-color: rgb(59, 52, 57);
+  padding: 1rem;
+  }
+  
+  h2 {
+  font-weight: 400;
+  font-size: 15px;
+  }
+  
+  .footer ul {
+  list-style: none;
+  padding-left: 0;
+  }
+  
+  .footer li {
+  line-height: 2em;
+  }
+  
+  .footer a {
+  text-decoration: none;
+  }
+  
+  .r-footer {
+  display: flex;
+  flex-flow: row wrap;
+  
+  }
+  
+  .r-footer > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+  }
+  
+  .box a {
+  color: #999;
+  }
+  
+  .h-box {
+  column-count: 2;
+  column-gap: 1.25em;
+  }
+
+  .l-footer p {
+  padding-right: 20%;
+  color: #999;
+  }   
+  
+  @media screen and (min-width: 600px) {
+  .r-footer > * {
+  flex: 1;
+  }
+  
+  .features {
+  flex-grow: 2;
+  }
+  
+  .l-footer {
+  flex: 1 0px;
+  }
+  
+  .r-footer {
+  flex: 2 0px;
+  }
+
+  }
+
+.linkn:hover{
+color:tomato
+}
+
+.shipping-form{
+  width:36rem;
 }
