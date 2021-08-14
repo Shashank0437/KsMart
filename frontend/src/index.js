@@ -5,7 +5,7 @@ import Error404Screen from "./screens/Error404Screen.js";
 import CartScreen from "./screens/CartScreen.js";
 import RefundScreen from "./screens/RefundScreen.js";
 import SignInScreen from "./screens/SignInScreen.js";
-import Header from "./components/header.js";
+import Header from "./components/Header.js";
 import RegisterScreen from "./screens/RegisterScreen.js";
 import ProfileScreen from "./screens/ProfileScreen.js";
 import ShippingScreen from "./screens/ShippingScreen.js";
