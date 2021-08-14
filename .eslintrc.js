@@ -1,0 +1,12 @@
+module.exports={
+    env:{
+        browser:true,
+        node:true,
+        es2020:true
+    },
+    ext:['airbnb-base'],
+    parserOptions:{
+        sourceType:'module',
+        ecmaversion:11
+    }
+};
